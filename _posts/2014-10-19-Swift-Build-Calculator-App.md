@@ -2,6 +2,7 @@
 layout: post
 title:  "Swift Programming: Build a calculator app"
 subtitle: "Create and maintain a sequential text database in PHP"
+author: "Federico"
 date:   2014-10-19 16:20:40
 tags:
   - iOS

@@ -2,6 +2,7 @@
 layout: post
 title:  "Simple Text File Database in PHP"
 subtitle: "Create and maintain a sequential text database in PHP"
+author: "Federico"
 date:   2014-06-12 16:20:40
 tags:
   - PHP
@@ -9,7 +10,6 @@ tags:
   - Code
   - PHP programming
 categories: PHP
-tags: [php, programming, code, text database]
 ---
 Sometimes you need to capture data sequentially without structured tables or relationships. In this case a SQL database is overkill and unnecessarily complex for the task at hand.  
 
