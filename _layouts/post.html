@@ -8,8 +8,8 @@
         <div class="well">
           <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%b %-d, %Y" }} - {{ page.title }}</a></h1>
           {% if page.author %}
-          By <em>{{ page.author }}</em><br>
-          
+          By <em>{{ page.author }}</em><p>&nbsp;</p>
+
           {% endif %}
           {% if site.comments == true and page.comments == true and site.disqus != '' %}
             <p class="author"><a href="#disqus_thread">Comments</a></p>
