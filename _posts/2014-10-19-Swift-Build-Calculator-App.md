@@ -21,8 +21,8 @@ If you need the Xcode project files you can download them <a title="iOS Calcula
 It's a basic calculator, nothing fancy.  The app performs the usual arithmetic operations plus a series specialized percentage buttons intended to be used as tip calculators. I personally tested it on my iPhone 5 and it works as intended.
 
 
-![Fig 1a](http://codecoms.com/wp-content/uploads/2014/10/CalculatorInAction-2-162x300.png " Fig 1a - The Calculator in action") &nbsp;
-![image](http://codecoms.com/wp-content/uploads/2014/10/CalculatorInAction-1-161x300.png "Fig 1b. The Calculator in action")
+![Fig 1a](http://66.147.255.169/wp-content/uploads/2014/10/CalculatorInAction-2-162x300.png " Fig 1a - The Calculator in action") &nbsp;
+![image](http://66.147.255.169/wp-content/uploads/2014/10/CalculatorInAction-1-161x300.png "Fig 1b. The Calculator in action")
 
 I created the following user stories to guide me through the development:
 <ol>
