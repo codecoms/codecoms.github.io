@@ -8,7 +8,7 @@
         <div class="well">
           <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%b %-d, %Y" }} - {{ page.title }}</a></h1>
           {% if page.author %}
-          <div style="padding-bottom: 7px;"> By <em>{{ page.author }}</em></div>
+          <div style="padding-bottom: 20px; font-size: 9px;"> By <em>{{ page.author }}</em></div>
 
           {% endif %}
           {% if site.comments == true and page.comments == true and site.disqus != '' %}
