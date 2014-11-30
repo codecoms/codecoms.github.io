@@ -1,5 +1,5 @@
 body {
-    padding-top: 180px;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
@@ -51,5 +51,5 @@ body {
 }
 
 .navbar-inverse {
-    background-color: white;
+    background-color: #222;
 }
