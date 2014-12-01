@@ -22,7 +22,7 @@ It's a basic calculator, nothing fancy.  The app performs the usual arithmetic 
 
 
 ![Fig 1a](http://codecoms.paini.org/wp-content/uploads/2014/10/CalculatorInAction-2-162x300.png " Fig 1a - The Calculator in action") &nbsp;
-![image](http://66.147.255.169/wp-content/uploads/2014/10/CalculatorInAction-1-161x300.png "Fig 1b. The Calculator in action")
+![image](http://codecoms.paini.org/wp-content/uploads/2014/10/CalculatorInAction-1-161x300.png "Fig 1b. The Calculator in action")
 
 I created the following user stories to guide me through the development:
 <ol>
@@ -145,7 +145,7 @@ let total: Double
 
 You can try out all the classes by cutting and pasting the code in the Xcode playground:
 
-![Fig.3](http://codecoms.paini.org/wp-content/uploads/2014/10/TipCalculator-Playground.png "Testing the TipCalculator Class with the Playground")
+![Fig.3](http://codecoms.paini.org/wp-content/uploads/2014/10/TipCalculator-Playground.png "Testing the TipCalculator Class with the Playground") { width: 260px; }
 
 
 ##The Code
