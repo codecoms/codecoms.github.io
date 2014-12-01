@@ -21,7 +21,7 @@ If you need the Xcode project files you can download them <a title="iOS Calcula
 It's a basic calculator, nothing fancy.  The app performs the usual arithmetic operations plus a series specialized percentage buttons intended to be used as tip calculators. I personally tested it on my iPhone 5 and it works as intended.
 
 
-![Fig 1a](http://66.147.255.169/wp-content/uploads/2014/10/CalculatorInAction-2-162x300.png " Fig 1a - The Calculator in action") &nbsp;
+![Fig 1a](http://codecoms.paini.org/wp-content/uploads/2014/10/CalculatorInAction-2-162x300.png " Fig 1a - The Calculator in action") &nbsp;
 ![image](http://66.147.255.169/wp-content/uploads/2014/10/CalculatorInAction-1-161x300.png "Fig 1b. The Calculator in action")
 
 I created the following user stories to guide me through the development:
@@ -55,7 +55,7 @@ As in every iOS application we need to start in Xcode 6 as a brand new applicati
 I kept the calculator's look and feel is very simple (see Fig. 3).
 I created all the numbers buttons, the Clear and All Clear buttons, and all the standard arithmetic operations plus additional specialized "tip" buttons.
 
-![Fig.3](http://codecoms.com/wp-content/uploads/2014/10/Calculator-Main_storyboard-162x300.png "Fig 3. Storyboard layout of the calculator")
+![Fig.3](http://codecoms.paini.org/wp-content/uploads/2014/10/Calculator-Main_storyboard-162x300.png "Fig 3. Storyboard layout of the calculator")
 
 <ul>
 	<li>The digits 0-9 and the decimal (.) are connected to the IBAction "<em>digitTapped</em>"</li>
@@ -68,7 +68,7 @@ I created all the numbers buttons, the Clear and All Clear buttons, and all the 
 
 The way I organized the layout is explained in Fig.4  and is as follows:
 
-![Fig.4](http://codecoms.com/wp-content/uploads/2014/10/Calculator-Main_storyboard-Explanation-192x300.png "Fig 4. Calculator layout explanation")
+![Fig.4](http://codecoms.paini.org/wp-content/uploads/2014/10/Calculator-Main_storyboard-Explanation-192x300.png "Fig 4. Calculator layout explanation")
 
 <ul>
 	<li>(1) Is the main label which is named <em>answerFieldLabel. </em> The results are displayed here</li>
@@ -145,7 +145,7 @@ let total: Double
 
 You can try out all the classes by cutting and pasting the code in the Xcode playground:
 
-![Fig.3](http://codecoms.com/wp-content/uploads/2014/10/TipCalculator-Playground.png "Testing the TipCalculator Class with the Playground")
+![Fig.3](http://codecoms.paini.org/wp-content/uploads/2014/10/TipCalculator-Playground.png "Testing the TipCalculator Class with the Playground")
 
 
 ##The Code
