@@ -38,11 +38,11 @@ The user gets prompted to chose from a menu of possible conversions as shown in 
 After the user has chosen which currency to convert the prompt asks for the amount to convert as shown in Fig.2
 
 
-![Fig.2](http://codecoms.com/wp-content/uploads/2014/09/screen2-300x183.png "Fig.2 The user choses the amount to convert to the desired currency")
+![Fig.2](http://codecoms.paini.org/wp-content/uploads/2014/09/screen2-300x183.png "Fig.2 The user choses the amount to convert to the desired currency")
 
 When the user hits return the calculated amount converted in the desired currency is shown along with the conversion rate as shown in Fig.3
 
-![Fig.3](http://codecoms.com/wp-content/uploads/2014/09/screen3-300x47.png "Fig.3 Final screen with the converted amount.")
+![Fig.3](http://codecoms.paini.org/wp-content/uploads/2014/09/screen3-300x47.png "Fig.3 Final screen with the converted amount.")
 
 ###Code Explanation
 
