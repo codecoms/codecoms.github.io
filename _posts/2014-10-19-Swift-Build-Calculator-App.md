@@ -145,7 +145,7 @@ let total: Double
 
 You can try out all the classes by cutting and pasting the code in the Xcode playground:
 
-<img src="http://codecoms.paini.org/wp-content/uploads/2014/10/TipCalculator-Playground.png" width="759px" height="252px" />
+<img src="http://codecoms.paini.org/wp-content/uploads/2014/10/TipCalculator-Playground.png" width="847px" height="262px" />
 
 
 ##The Code
