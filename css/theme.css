@@ -53,3 +53,9 @@ body {
 .navbar-inverse {
     background-color: #222;
 }
+
+code {
+  color: #205090;
+  font-weight: bold;
+  background-color: #e0e0e0;
+}
