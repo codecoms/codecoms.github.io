@@ -32,7 +32,7 @@ I'm always refining the code. You can find the most updated version on this prog
 
 The user gets prompted to chose from a menu of possible conversions as shown in Fig. 1 
 
-![Fig.1](http://codecoms.com/wp-content/uploads/2014/09/screen1-300x155.png "Fig.1 Main Menu")
+![Fig.1](http://codecoms.paini.org/wp-content/uploads/2014/09/screen1-300x155.png "Fig.1 Main Menu")
 
 
 After the user has chosen which currency to convert the prompt asks for the amount to convert as shown in Fig.2
