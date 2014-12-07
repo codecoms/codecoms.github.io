@@ -15,7 +15,8 @@ I came across a March 5th post on Jeff Atwood's website <a title="Coding Horror"
 I wasn't surprise to what he had to say.  Most people who define themselves as programmer fail to perform basic programming tasks when asked on the spot (a job interview, ouch!!). <br>
 In the article Jeff talks about the "FizzBuzz" test, so I took up the challenge and tried to create the program on the spot in PHP. I'm not a professional programmer, just a passionate hobbyist coder, and it took me about 10 minutes to code and run the program (if you want to see the result go <a title="FizzBuzz" href="http://www.paini.org/federico/fizzbuzz.php">here</a>).
 
-<strong>FizzBuzz challenge</strong>: <em>Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".</em>
+**FizzBuzz challenge**: <em>Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+</em>
 
 This is my code in. I admit is not the most elegant solution but it does the trick.
 
