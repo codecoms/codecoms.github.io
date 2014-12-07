@@ -14,7 +14,6 @@ categories: Git
 
 
 Normally you can simply sign up at [http://github.com](http://github.com) to setup a free (but public) remote repository for your git project.
-
 But if you want to create a private version on a remote server that already has git installed here is an example script:
 
 {% highlight bash %}
