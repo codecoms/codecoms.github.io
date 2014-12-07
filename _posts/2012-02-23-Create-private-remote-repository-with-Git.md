@@ -28,7 +28,7 @@ cd $source_dir/$project
 
 {% endhighlight %}
 
-## now add some files
+Now add some files:
 
 {% highlight bash %}
 
