@@ -8,8 +8,9 @@ tags:
   - Blog
   - Git
   - How to
-categories: Git
+categories: Blog
 ---
+
 
 Normally you can simply sign up at [http://github.com](http://github.com) to setup a free (but public) remote repository for your git project.
 
@@ -44,3 +45,6 @@ git config branch.master.remote origin
 git config branch.master.merge refs/heads/master
 
 {% endhighlight %}
+
+<p>&nbsp;</p>
+{% include twitter_plug.html %}
