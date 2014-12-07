@@ -2,8 +2,8 @@
 layout: post
 title:  "Creating a private remote repository with Git"
 subtitle: "How to create a private remote repository with Git"
+date: 2012-02-23 20:20:40
 author: "Kevin"
-date:   2012-02-23 20:20:40
 tags:
   - Git
   - Blog
