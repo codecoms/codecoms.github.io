@@ -17,7 +17,7 @@ Normally you can simply sign up at [http://github.com](http://github.com) to set
 
 But if you want to create a private version on a remote server that already has git installed here is an example script:
 
-{% highlight shell %}
+{% highlight bash %}
 
 source_dir=~/src
 project=myproject
@@ -30,14 +30,14 @@ cd $source_dir/$project
 
 ## now add some files
 
-{% highlight shell %}
+{% highlight bash %}
 
 git init .
 git add .
 git commit -m 'initial commit'
 
 ssh $remote "mkdir -p repos/$project"
-ssh $remote "cd repos/$project &amp;&amp; git --bare init"
+ssh $remote "cd repos/$project && git --bare init"
 
 git remote add origin $remote:repos/$project
 git push origin master

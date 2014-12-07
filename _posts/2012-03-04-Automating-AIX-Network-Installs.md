@@ -27,7 +27,7 @@ Using <a href="https://www.ibm.com/developerworks/wikis/display/virtualization/l
 `# flash-lpar.sh hmc1 p770-a jabba.codecoms.com 10.1.1.150 10.1.1.1`
 
 
-{% highlight shell %}
+{% highlight sh %}
 
 #!/bin/sh
 # flash-lpar.sh
@@ -39,7 +39,7 @@ setvar() {
 }
 
 if [ "$#" -ne 6 ]; then
-  echo "usage $0 hmc frame lpar hostname ip gw" 1&gt;&amp;2
+  echo "usage $0 hmc frame lpar hostname ip gw" 1>2
   exit 1
 fi
 
