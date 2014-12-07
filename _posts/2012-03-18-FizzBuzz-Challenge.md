@@ -20,25 +20,27 @@ In the article Jeff talks about the "FizzBuzz" test, so I took up the challenge 
 This is my code in. I admit is not the most elegant solution but it does the trick.
 
 PHP:
+
 {% highlight php %}
 
-for ($i = 1; $i &lt;= 100; $i++) {
+<?php
 
-  if (is_int($i/3) &amp;&amp; is_int($i/5)) {
-      print "FizzBuzz! &lt;br&gt; \n";
+for ($i = 1; $i <= 100; $i++) {
+
+  if (is_int($i/3) && is_int($i/5)) {
+      print "FizzBuzz! <br> \n";
   }elseif (is_int($i/3)){
-      print "Fizz! &lt;br&gt;";
+      print "Fizz! <br>";
   }elseif  (is_int($i/5)){
-      print "Buzz! &lt;br&gt; \n";
+      print "Buzz! <br> \n";
   } else {
-      print "$i &lt;br&gt; \n";
+      print "$i <br> \n";
   }
 }
 
-?&gt;
+?>
 
 {% endhighlight %}
-&nbsp;
 
 Apple Swift:
 
@@ -50,7 +52,7 @@ var five = 5
 var n = 0
 
 for n in 1...99 {
-    if (n % three == 0) &amp;&amp; (n % five == 0) {
+    if (n % three == 0) && (n % five == 0) {
         println("FizzBuzz!")
     } else if n % three == 0 {
         println("Fizz")
@@ -63,11 +65,12 @@ for n in 1...99 {
 }
 
 {% endhighlight %}
-&nbsp;
+
 
 Objective-C:
 
 {% highlight objective-c %}
+
 int main (int argc, const char * argv[])
  
 {
@@ -76,9 +79,9 @@ int main (int argc, const char * argv[])
  
   int n, three = 3, five = 5;
  
-  for (n=1; n&lt;=100; n=n+1) {
+  for (n=1; n<=100; n=n+1) {
  
-    if (n%three == 0 &amp;&amp; n%five == 0) {
+    if (n%three == 0 && n%five == 0) {
  
        NSLog(@"FizzBuzz \n");
  
@@ -106,7 +109,6 @@ return 0;
 
 {% endhighlight %}
 
-&nbsp;
 
 Python:
 
@@ -115,7 +117,6 @@ Python:
 #!/usr/bin/python
 
 def FizzBuzz(number):
-
 	for x in xrange(1, number+1):
 		if (x % 3) == 0 and (x % 5) == 0:
 			print "FizzBuzz!"
