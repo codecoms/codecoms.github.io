@@ -131,3 +131,6 @@ FizzBuzz(number)
 
 {% endhighlight %}
 &nbsp;
+
+<p>&nbsp;</p>
+{% include twitter_plug.html %}

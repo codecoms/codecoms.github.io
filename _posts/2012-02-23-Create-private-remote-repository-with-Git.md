@@ -47,4 +47,5 @@ git config branch.master.merge refs/heads/master
 {% endhighlight %}
 
 <p>&nbsp;</p>
+
 {% include twitter_plug.html %}
