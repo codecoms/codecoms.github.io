@@ -104,7 +104,7 @@ Jekyll uses the [Ruby](https://www.ruby-lang.org/en/) based [Liquid Templating L
 
 I already explained the `_post` directory. Regarding the others here is a brief introduction:
  
- * **_confic.yml**: this is the directory in which are saved all the configuration files. Here is where all the site variable are located. if, for example, `my_string: "string"` is saved in `_config.yml`, you can access the value in a page by using \{\{ site.my_string \}\}. 
+ * **_config.yml**: this is the directory in which are saved all the configuration files. Here is where all the site variable are located. if, for example, `my_string: "string"` is saved in `_config.yml`, you can access the value in a page by using \{\{ site.my_string \}\}. 
  * **_includes**: Here you can include HTML files and these will be used when you post. In my site I have the file `twitter_plug.html`. I reference it by including it  at the end of each post article between curly brackets \{\% twitter_plug.html \}\% (remove the "\").
  * **_layouts**: This is the folder for the templates layout (header, footer, etc..). It is possible to have many different layouts for different pages.
  * **about.md**: This is the equivalent of a "page" in Wordpress. The layout of this markdown file is a little different then a post (see below). If you want to add another "page" simply copy the file and change the `title:` and the `permalink:`.   
