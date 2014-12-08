@@ -58,12 +58,12 @@ The basic site was there in plain view, working fine. Finally We're getting some
 
 <br>
 ![Fig.1](http://www.paini.org/federico/imgs/blog-imgs/Basic-Jekyll-Site-Rendered.png)
-<p align=center>Fig.1 If you see this that means everything is A-OK!</p>
+<p align=center>Fig.1 If you see this it means that everything is A-OK!</p>
 <br>
 
 ##How Jekyll works
 
-On a basic level Jekyll will do it's magic any time you place a markdown file (in my case a blog post) on the `_post` directory. 
+On a basic level Jekyll will do its magic any time you place a markdown file (in my case a blog post) on the `_post` directory. 
 Naturally there is a lot more than that but this is a good start. You can try creating articles and put them in the `_post` directory. Assuming Jekyll is running you will see that Jekyll generate a message in the terminal similar to this: <br>
 
 `Regenerating: 1 files at 2014-12-05 00:04:49 ...done.`. <br>
@@ -104,10 +104,10 @@ Jekyll uses the [Ruby](https://www.ruby-lang.org/en/) based [Liquid Templating L
 
 I already explained the `_post` directory. Regarding the others here is a brief introduction:
  
- * **_confic.yml**: this is the directory in which are saved all the configuration files. Here is where all the site variable are located. if, for example, `my_string: "string"` is saved in `_config.yml`, you can access the value in a page by using {{ site.my_string }}. 
- * **_includes**: Here you can include HTML files and these will be used when you post. In my site I have the file `twitter_plug.html` and I reference it by including it  at the end of each post article between curly brackets \{\% twitter_plug.html \}\% (remove the "\").
+ * **_confic.yml**: this is the directory in which are saved all the configuration files. Here is where all the site variable are located. if, for example, `my_string: "string"` is saved in `_config.yml`, you can access the value in a page by using \{\{ site.my_string \}\}. 
+ * **_includes**: Here you can include HTML files and these will be used when you post. In my site I have the file `twitter_plug.html`. I reference it by including it  at the end of each post article between curly brackets \{\% twitter_plug.html \}\% (remove the "\").
  * **_layouts**: This is the folder for the templates layout (header, footer, etc..). It is possible to have many different layouts for different pages.
- * **about.md**: This is the equivalent of a "page" in Wordpress. The layout of this markdown file is a little different then a port (see below). If you want to add another simply copy the file and change the `title:` and the `permalink:`.   
+ * **about.md**: This is the equivalent of a "page" in Wordpress. The layout of this markdown file is a little different then a post (see below). If you want to add another "page" simply copy the file and change the `title:` and the `permalink:`.   
 
 ##Markdown Page File Template
 
