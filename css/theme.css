@@ -38,8 +38,7 @@ body {
 }
 
 .well h1 {
-  // color: #ee4444;
-  color: #fff;
+  color: #ee4444;
   font-size: 1.3em;
   background-color: #ffffff;
 }
@@ -53,7 +52,7 @@ body {
   line-height: 24px;
 }
 
-img {
+.post-content img {
   box-shadow: 5px 5px 5px #888888;
   border-left-width: 1px;
   border-left-style: solid;
