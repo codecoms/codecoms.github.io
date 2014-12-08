@@ -3,6 +3,7 @@ layout: post
 title:  "Currency Converter Program in Python"
 subtitle: "Self updating Currency Converter Program in Python for CLI"
 author: "Federico"
+comments: true
 date:   2014-09-28 20:20:40
 tags:
   - Python

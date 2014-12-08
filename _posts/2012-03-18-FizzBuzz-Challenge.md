@@ -4,6 +4,7 @@ title:  "The FizzBuzz Programming Challenge "
 subtitle: "FizzBuzz Programming challenge in PHP, Python, Swift, and Objective-C"
 date:   2012-03-18 14:40:59
 author: "Federico"
+comments: true
 tags:
   - PHP
   - Code challenge
