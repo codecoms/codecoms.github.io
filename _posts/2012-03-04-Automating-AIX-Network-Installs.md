@@ -4,6 +4,7 @@ title:  "Automating AIX Network Installs"
 subtitle: "Example script used to build out a new AIX p770 environment using IBM Hardware Management Console (HMC)"
 author: "Kevin"
 date:   2012-03-04 18:27:17
+comments: true
 tags:
   - Unix Administration
   - AIX

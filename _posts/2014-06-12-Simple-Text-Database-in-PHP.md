@@ -4,6 +4,7 @@ title:  "Simple Text File Database in PHP"
 subtitle: "Create and maintain a sequential text database in PHP"
 author: "Federico"
 date:   2014-06-12 16:20:40
+comments: true
 tags:
   - PHP
   - Text database
