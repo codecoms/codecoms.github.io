@@ -23,7 +23,7 @@ First off I'd like to clarify a couple of things:
 
 1. Jekyll is not a blog software like Wordpress so do not expect something similar. <br> "*Jekyll is a parsing engine bundled as a ruby gem used to build static websites from dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as "a simple, blog aware, static site generator*" [See here](http://jekyllbootstrap.com/lessons/jekyll-introduction.html).
 2. You need to be familiar with the terminal (CLI)
-3. You to learn to use the markdown "language" (very easy). Just go [here](http://daringfireball.net/projects/markdown/syntax) and start familiarize wit it 
+3. You to learn to use the markdown "language" (very easy). Just go [here](http://daringfireball.net/projects/markdown/syntax) and start familiarizing wit it 
 4. If you need a good and free markdown editor for Mac I suggest [Mou](http://25.io/mou/)
 5. You need to be familiar with Git and Github and have a Github account. You can find a good resource [here](http://sixrevisions.com/resources/git-tutorials-beginners/)
 6. If you host the site on [Github Pages](https://help.github.com/articles/what-are-github-pages/) your blog and content will be publicly accessible (meaning: no private content)
@@ -41,12 +41,13 @@ These are the steps that lead me to create a local sandbox and two websites ([ww
    * I cd in that directory and typed `jekyll serve`
    * I went to my browser and looked at the address posted in the terminal: `http://127.0.0.1:4000`
    * I created a Github empty repository named `federicopaini.github.io` and sync it with my  MacBook using the [Github for Mac](https://mac.github.com/) app 
-   * I looked for a nice [theme](http://jekyllthemes.org/) and the I downloaded, unzipped, and copied it in my sandbox
+   * I looked for a nice [theme](http://jekyllthemes.org/) and then I downloaded, unzipped, and copied it in my sandbox
    * Run `jekyll serve` and verified that the theme was rendered correctly
-   * Modified the template according to the instructions 
-   * Copied a couple of old posts from my Wordpress site, turned them into "markdown" `.md or .markdown` files and then moved the .md posts into the `_post` folder 
+   * Modified the template according to the instructions and changed HTML/CSS to my liking
+   * Copied a couple of old posts from my old Wordpress site, turned them into "markdown" files `.md` or `.markdown` and then moved the `.md` posts into the `_post` folder 
    * Checked that the posts were rendered correctly on `http://127.0.0.1:4000`
-   * Once the sandbox is ready and working I then copied the files from the sandbox to my local Github folder `federicopaini.github.io` 
+   * Modified the articles accordingly until they were ready
+   * Once the sandbox is ready and working I then copied the files from the local sandbox folder `test-jackyll-site` to my local Github folder `federicopaini.github.io` 
    * Run `jekyll serve` to make sure no error were present. (**Note:** remember to kill off the running Jekyll instance otherwise you get an port conflict error)
    * Committed and synched the code into Github via the app
    * Directed my browser to `http://federicopaini.github.io` and watched my blog come to life 
