@@ -53,6 +53,13 @@ body {
   line-height: 24px;
 }
 
+img {
+  box-shadow: 5px 5px 5px #888888;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #ccc;
+}
+
 .author {
     color: #ee4444;
 }
