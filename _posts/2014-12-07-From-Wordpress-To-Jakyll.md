@@ -12,6 +12,8 @@ tags:
   - Jekyll
   - Wordpress
 categories: Blog
+blurb: >
+  Ho-to guide for switching from Wordpress to Jekyll. Links, tips and suggestions for the new user from my own experience.
 ---
 
 I recently moved my blog sites to [Github Pages](http://github.io) and [Jekyll](http://www.jekyll.org). I have to admit it, was not an easy "plug-n-play" experience.

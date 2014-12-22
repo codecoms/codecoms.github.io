@@ -9,7 +9,9 @@ tags:
   - Python
   - Programming
 categories: Python
-
+blurb: >
+  Teach your kid to program in Python by using "Turtle", a Logo-style interactive graphic shell when you can write commands and make geometric shapes. 
+    
 ---
 
 
