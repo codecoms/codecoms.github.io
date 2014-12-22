@@ -10,6 +10,8 @@ tags:
   - Code challenge
   - How-to
 categories: PHP
+blurb: >
+  Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz"
 ---
 
 I came across a March 5th post on Jeff Atwood's website <a title="Coding Horror" href="http://www.codinghorror.com" target="_blank">Coding Horror</a> title <a title="How to Hire a programmer" href="http://www.codinghorror.com/blog/2012/03/how-to-hire-a-programmer.html" target="_blank">How to hire a programmer</a>. <br>

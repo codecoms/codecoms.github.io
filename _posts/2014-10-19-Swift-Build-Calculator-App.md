@@ -11,6 +11,9 @@ tags:
   - Code
   - Swift programming
 categories: iOS
+blurb: >
+  How to build a functioning calculator app for iPhone/iPad in iOS8 with the Swift language.
+
 ---
 
 I was scouring the web for blogs and videos about programming in Swift I found a couple that were showing how to build a calculator. I decided to build one of my own to help me in my swift discovering journey.

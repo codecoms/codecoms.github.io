@@ -11,7 +11,7 @@ tags:
   - how-to
 categories: how-to
 blurb: >
-  How to create a gaming computer from scratch for under $600
+  How to create and assemble a gaming computer from scratch for under $600
 ---
 
 In my spare time I'm a PC Gamer so I need to refresh my gear every 1.5-2 years to stay up to date with the latest games. The whole process can set me back about $1,200-$1,500 every time.<br>

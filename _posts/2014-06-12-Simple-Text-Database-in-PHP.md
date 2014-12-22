@@ -11,6 +11,9 @@ tags:
   - Code
   - PHP programming
 categories: PHP
+blurb: >
+Flat file database handling with PHP. Add, delete, backup, and display the records in a text based file.
+
 ---
 Sometimes you need to capture data sequentially without structured tables or relationships. In this case a SQL database is overkill and unnecessarily complex for the task at hand.  
 
