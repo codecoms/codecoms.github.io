@@ -9,8 +9,10 @@ tags:
   - blog
   - ruby
   - programming
-  
 categories: ruby
+blurb: >
+  Start coding using Test Driven Development with Ruby rspec. How to install and use rspec, create test methods and execute tests.
+
 ---
 
 Test Driven Development (TDD) is defined as the "<em>software development process that relies on the repetition of a very short development cycle: first the developer writes an (initially failing) automated test case that defines a desired improvement or new function, then produces the minimum amount of code to pass that test, and finally refactors the new code to acceptable standards"</em> <a title="Test Driven Development on Wikipedia" href="http://en.wikipedia.org/wiki/Test-driven_development" target="_blank">[Wikipedia]</a>.

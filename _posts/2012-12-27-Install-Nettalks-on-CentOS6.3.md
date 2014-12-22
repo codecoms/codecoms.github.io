@@ -9,8 +9,10 @@ tags:
   - blog
   - how-to
   - linux
-  
 categories: Linux
+blurb:>
+ Step by step guide on how to install the Nettalk protocol on Linux CentoOS.
+ 
 ---
 
 I have a variety of PCs in my house running Linux CentOS, Windows 7 and Mac OSX 10.8 Mountain Lion. Something was bothering me: I could not "see" my Linux laptop with my MacBook Pro like I "see" all the other PC/devices in my LAN.
