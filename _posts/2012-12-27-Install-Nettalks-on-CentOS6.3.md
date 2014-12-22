@@ -10,8 +10,8 @@ tags:
   - how-to
   - linux
 categories: Linux
-blurb:>
- Step by step guide on how to install the Nettalk protocol on Linux CentoOS.
+blurb: >
+ Step by step guide on how to install the Apple Nettalk protocol on Linux CentoOS.
  
 ---
 
