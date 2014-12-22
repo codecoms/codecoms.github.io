@@ -41,15 +41,37 @@ body {
   color: #ee4444;
   font-size: 1.3em;
   background-color: #ffffff;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.blurb {
+  line-height: 18px;
+  background-color: #ffffff;
+  padding: 0px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-bottom: 12px;
+}
+
+.content {
+  padding: 0px 12px 0px 12px;
 }
 
 .well {
   background-color: #ffffff;
+  padding: 0px;
+  padding-left: 6px;
+  padding-left: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
 }
 
 .article {
   background-color: #ffffff;
   line-height: 24px;
+  padding: 0px;
+  margin-bottom: 0px;
 }
 
 .post-content img {

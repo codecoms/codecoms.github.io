@@ -9,6 +9,8 @@ tags:
   - Blog
   - programming
 categories: Git
+blurb: >
+  How to create a private remote repository with Git.
 
 ---
 

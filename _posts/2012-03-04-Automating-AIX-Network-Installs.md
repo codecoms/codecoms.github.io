@@ -10,6 +10,8 @@ tags:
   - AIX
   - Shell Scripting
 categories: UNIX
+blurb: >
+  Example script used to build out a new AIX p770 environment using IBM Hardware Management Console (HMC).
 
 ---
 

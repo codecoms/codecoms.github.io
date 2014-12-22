@@ -11,9 +11,10 @@ tags:
   - Python programming
   - programming
 categories: Python
+blurb: >
+  A self-updating currency converter program in Python for the CLI.
 
 ---
-
 
 
 Recently I find myself traveling quite a bit internationally. I needed a program to quickly convert my money into the currency of the country I happen to visit at the moment. I took advantage of this need to practice my coding skills in Python. In this post I explain how I did  it.
@@ -24,14 +25,14 @@ I'm always refining the code. You can find the most updated version on this prog
 
 1. As I user I need to be able to put in any amount I desire and see the resulted converted output on screen
 * As a user I need a program for CLI in which converts any amount to a destination currency of my choice (i.e.: US Dollars to Euros)
-  * Needs to convert a source currency to a destination currency 
-  * Needs to have a menu to pick what conversion rate to use 
+  * Needs to convert a source currency to a destination currency
+  * Needs to have a menu to pick what conversion rate to use
   * The output needs to be formatted (i.e: $3,235.50)
 * The conversion rate used should not be more the 24 hours old
 
 ###How the program works
 
-The user gets prompted to chose from a menu of possible conversions as shown in Fig. 1 
+The user gets prompted to chose from a menu of possible conversions as shown in Fig. 1
 
 ![Fig.1](http://codecoms.paini.org/wp-content/uploads/2014/09/screen1-300x155.png "Fig.1 Main Menu")
 
@@ -65,13 +66,13 @@ When the user hits return the calculated amount converted in the desired currenc
  def create_exchange_dict():
 	exchange_rates_dict = {}
 	conversion_rates = open (file, 'r') #open file read only
-		
+
 	for line in conversion_rates:
 		exchange_rates_dict[line.split(",")[0]] = line.split(",")[1]
-	
+
 		conversion_rates.close()
 		return exchange_rates_dict
-		
+
 {% endhighlight %}
 
 * **grab_web_rates()**. This is the heart of the program. The function goes online, grabs the exchange rates from a live website and saved them into *conv_rates.txt*. To do this I use the Python libraries  `urllib2` and `re`. In this instance I only grab the first 23 lines to avoid copying the  whole website.
@@ -138,7 +139,7 @@ def checkChoice(choice):
 
 
 {% highlight python %}
-#!/usr/bin/python	
+#!/usr/bin/python
 import sys, os, os.path, urllib2, re, cookielib, time, datetime, locale
 
 file = 'conv_rates.txt' #file containing the exchange rates
@@ -230,7 +231,7 @@ def main():
 	choice = int(choice)
 
 	#Exit script if the selection is not whithin the allowed range
-	if choice == 0 or choice > 10: 
+	if choice == 0 or choice > 10:
 		os.system('clear')
 		print "Thanks for using Currency Calculator! \n"
 		exit()
