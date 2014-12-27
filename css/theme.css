@@ -51,11 +51,12 @@ body {
   padding: 0px;
   padding-left: 6px;
   padding-right: 6px;
-  margin-bottom: 20px;
+  padding-bottom: 12px;
 }
 
 .content {
   padding: 0px 12px 0px 12px;
+  margin-bottom: 6px;
 }
 
 .well {
