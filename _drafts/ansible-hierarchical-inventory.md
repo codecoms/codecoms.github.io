@@ -12,21 +12,27 @@ author: "Kevin M. Counts"
 blurb: "Creating a hierachical group structure with an Ansible dynamic inventory source"
 ---
 
-I recently started a new position at the University of South Florida
-supporting their Health Informatics research environment.
+In my new position at the University of South Florida's Health Informatics Institute,
+I've had the opportunity to develop a project entitled "Deployer" to help manage the
+UNIX infrastructure.
 
-One of the projects I started on early in my "honeymoon period" was assessing portions of
-the UNIX environment and developing a configuration management system entitled "deployer"
-to help manage it.
+Before taking too much credit for this, in reality, deployer is fundamentally
+some bash and python code running along side ansible playbooks and roles
+but structured in a particular way to suit my organization's culture and workflow.
 
-Before I take too much credit for this, in reality, deployer is simply some bash
-and python code which wraps the ansible system into something my team can approach as
-a cohesive project for managing systems in the UNIX environment.
+When setting up ansible for the first time and after moving beyond
+examples of managing ssh or installing ntp, I seemed to hit a mental block.
+I had actually been using ansible in a smaller way for over a year and had
+extensive experience with Puppet, Chef and CFengine.
 
-I am a big fan of ansible, but deploying ansible bare-bones and asking others to hit the ground
-running is not always realistic without some consideration of the environment you are coming into.
-Many factors play into this including engineers who are intelligent and experienced
-however may lack exposure to insfrastructure-as-code methodologies.
+Ansible is a powerful and extremely flexible configuration management tool,
+but in a way this creates a bit of a vacuum when deciding how to structure
+a larger infrastructure project where you are thinking about how many different
+components are going to interact as well as laying out some way to deploy to dev, test, and production.
+
+But deploying ansible bare-bones and asking others to hit the ground running is not always realistic without some consideration of the environment you are coming into.
+
+Many factors play into this including engineers who are intelligent and experienced however may lack exposure to insfrastructure-as-code methodologies.
 
 The heart of deployer is, you might have guessed, the command `deployer`.
 
@@ -44,9 +50,8 @@ Setting `deployer`'s environment's serves several functions:
   1. Adds the variable `deployer_env` to the playbook run for conditional logic.
 
 
-
-
 ## Dynamic Inventory Source
+
 In retrospect, I believe I went a little too far at first with the wrapper layer in deployer
 and was starting to lose sight of the "ansible way". This included ... however my reasons
 were trying to which I see on the mailing list from time to time, which is how to deal
