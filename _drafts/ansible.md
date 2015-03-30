@@ -1,73 +1,16 @@
 ---
 vim: ft=markdown
 layout: post
-title: "A Hierachical Group Structure with Ansible"
-description: "Creating a hierachical group structure with an Ansible dynamic inventory source"
+title: "A Hierachical Inventory with Ansible"
+description: "Creating a hierachical group structure with an ansible dynamic inventory"
 comments: false
 categories: devops
 tags:
   - devops
   - ansible
 author: "Kevin M. Counts"
-blurb: "Creating a hierachical group structure with an Ansible dynamic inventory source"
+blurb: "Creating a hierachical group structure with an ansible dynamic inventory"
 ---
-
-I recently started a new position at the University of South Florida
-supporting their Health Informatics research environment.
-
-One of the projects I started on early in my "honeymoon period" was assessing portions of
-the UNIX environment and developing a configuration management system entitled "deployer"
-to help manage it.
-
-Before I take too much credit for this, in reality, deployer is simply some bash
-and python code which wraps the ansible system into something my team can approach as
-a cohesive project for managing systems in the UNIX environment.
-
-I am a big fan of ansible, but deploying ansible bare-bones and asking others to hit the ground
-running is not always realistic without some consideration of the environment you are coming into.
-Many factors play into this including engineers who are intelligent and experienced
-however may lack exposure to insfrastructure-as-code methodologies.
-
-The heart of deployer is, you might have guessed, the command `deployer`.
-
-`deployer` is a bash wrapper around the `ansible-playbook` command which provides
-some additional semantics particular to our environment.
-
-We established our concept of an environment and this is set the `--env=<environment>` option
-with a default of `dev`.
-
-Setting `deployer`'s environment's serves several functions:
-
-  1. Isolate ansible-playbook runs to only hosts defined within that environment within our dynamic inventory source.
-  1. Allows setting the name of the environment as a group to which all other groups belong providing
-     a way to define environment specific settings.
-  1. Adds the variable `deployer_env` to the playbook run for conditional logic.
-
-
-
-
-## Dynamic Inventory Source
-In retrospect, I believe I went a little too far at first with the wrapper layer in deployer
-and was starting to lose sight of the "ansible way". This included ... however my reasons
-were trying to which I see on the mailing list from time to time, which is how to deal
-with development, test, and production environments. Ansible is great in giving you flexibility
-but as a consequence, leaves it up to you to a certain degree to put key pieces in
-the right place for your particular situation.
-
-One of the driving pressures for implementing deployer was reducing the "fear factor"
-of trying out something new by engineers learning the ropes. Strategies like having multiple
-git branches or directory trees to separate inventories and variables seemed too heavy weight.
-
-I decided on continuing to utilze the wrapper concept but only and setting an environmental variable `$DEPLOYER_ENV`
-
-
-
-
-the wrapper (via extra-vars, environmental variables, etc.) and started to lose sight of "the
-ansible way".
-
-
-
 
 ## toc
 
@@ -191,4 +134,59 @@ Additional ansible-playbook options may be added following a `--`, e.g.:
 
 [hadoop]
 
+
+---
+layout: post
+title: "An Opinionated Ansible Layout"
+description: "An Introduction to Pyenv"
+comments: true
+categories: devops
+tags:
+  - devops
+  - ansible
+author: "Kevin M. Counts"
+blurb: >
+  Setting up a top-level project for managing your infrastructure with a configuration
+  management system can take many forms. This post illustrates an opinionated layout
+  for ansible.
+---
+
+- [ansible best practices directory layout](http://docs.ansible.com/playbooks_best_practices.html#directory-layout)
+
+```
+<project-root>
+  - Makefile
+  - Vagrantfile
+  - config/
+  - packer/
+  - ansible/
+    - roles/
+    - site/
+      - sys/
+          - main.yml
+          - dev/
+             - vars
+             - inventory
+
+```
+
+Site Directory
+
+```
+- site/
+    - <site-name>
+      - main.yml <-- (playbook)
+      - <env>
+        - inventory
+        - vars
+
+
+Convenience symlink directories.
+
+  - site -> ansible/site
+  - roles -> ansible/roles
+  - vars -> ansible/vars
+  - tasks -> ansible/tasks
+
+- Command-T for VIM
 
