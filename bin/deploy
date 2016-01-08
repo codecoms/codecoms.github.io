@@ -42,15 +42,6 @@ run_local() {
   run_docker_listen jekyll bundle exec jekyll serve --watch
 }
 
-run_digicat() {
-  run_docker jekyll-build bundle exec jekyll build \
-    && rsync -rv --exclude /static --delete _site/ nezumi:public_html/
-}
-
 cd $BASEDIR
 
-case $1 in
-  local) run_local;;
-  digicat) run_digicat;;
-  *) usage;;
-esac
+run_local
