@@ -30,8 +30,8 @@ avatar: "/img/avatar-icon.png"
 
 # List of links in the navigation bar
 navbar-links:
-  About: aboutme.html
-  Github: "https://github.com/codecoms.com"
+  About: about.html
+  Github: "https://github.com/codecoms"
   Disclaimer: disclaimer.html
 
 # --- Footer options --- #
