@@ -30,20 +30,18 @@ avatar: "/img/avatar-icon.png"
 
 # List of links in the navigation bar
 navbar-links:
-  Github: "https://github.com/countdigi"
-  Twitter: "https://twitter.com/countdigi"
   About: aboutme.html
+  Github: "https://github.com/codecoms.com"
+  Disclaimer: disclaimer.html
 
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Kevin Counts
-  email: "counts@digicat.org"
-  github: countdigi    # eg. daattali
-  twitter: countdigi   # eg. daattali
-  stackoverflow: yourlink  # eg. "3943160/daattali"
+  name: Codecoms
+  github: codecoms    # eg. daattali
+  twitter: codecoms   # eg. daattali
 
 # Select which links to show in the footer
 footer-links-active:
