@@ -52,7 +52,7 @@ running Jekyll in the background or `build` to not run any server but simply bui
     c55d493d33bc: Pull complete
     8d3cc6ac7e3a: Pull complete
 
-    .... lots of gems....
+    .... lots of output and some harmless errors....
 
     Using github-pages 39
     Using libv8 3.16.14.13
@@ -72,4 +72,5 @@ running Jekyll in the background or `build` to not run any server but simply bui
       Server running... press ctrl-c to stop.
 
 At this point just point to `http://localhost:4000` and check out your site!
+
 
