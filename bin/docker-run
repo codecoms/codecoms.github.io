@@ -39,7 +39,8 @@ jekyll_background() {
 }
 
 jekyll_build() {
-  run_docker "jekyll-build" bundle exec build
+  kill_container "jekyll-build"
+  run_docker "jekyll-build" "" bundle exec jekyll build
 }
 
 MYBASE=$( dirname "${BASH_SOURCE}" )/..
