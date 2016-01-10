@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+
+usage() {
+  echo "$( basename "${BASH_SOURCE}" ) <fg|bg|build>" 1>&2
+  exit 1
+}
+
+run_docker() {
+  local name=$1; shift
+  local options="$1"; shift
+
+  docker run \
+    --name=${name} \
+    ${options} \
+    --env="BUNDLE_CACHE=true" \
+    --volume=$( pwd ):/srv/jekyll \
+    jekyll/jekyll \
+    "$@"
+}
+
+kill_container() {
+  local name="$1"
+  local container_id=$( docker ps -qa --filter="name=${name}" )
+  [[ -n ${container_id} ]] && docker rm --force ${container_id}
+}
+
+jekyll_foreground() {
+  kill_container "jekyll-serve"
+  run_docker "jekyll-serve" \
+    "--publish=0.0.0.0:4000:4000 --interactive --tty" \
+    bundle exec jekyll server --watch
+}
+
+jekyll_background() {
+  kill_container "jekyll-serve"
+  run_docker "jekyll-serve" \
+    "--publish=0.0.0.0:4000:4000 --detach" \
+    bundle exec jekyll server --watch
+}
+
+jekyll_build() {
+  run_docker "jekyll-build" bundle exec build
+}
+
+MYBASE=$( dirname "${BASH_SOURCE}" )/..
+
+[[ $# != 1 ]] && usage
+
+CDPATH="" cd $MYBASE
+
+case $1 in
+  fg) jekyll_foreground ;;
+  bg) jekyll_background ;;
+  build) jekyll_build ;;
+  *) usage ;;
+esac
