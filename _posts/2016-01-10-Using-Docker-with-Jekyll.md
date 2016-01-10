@@ -5,6 +5,12 @@ author: countdigi
 tags: [ docker, jekyll ]
 ---
 
+---
+
+Script available [here](https://github.com/codecoms/codecoms.github.io/tree/master/bin/docker-run)
+
+---
+
 We are using [Jekyll](https://jekyllrb.com/), a static blog generator, for [Codecoms.com](http://codecoms.com),
 a site I maintain with a friend of mine as well as for my own [personal blog](http://digicat.org).
 
@@ -23,7 +29,8 @@ Trying to simplify this even more I wrote a small utility script called
 [bin/docker-run](https://github.com/codecoms/codecoms.github.io/tree/master/bin/docker-run)
 that we added into our repository which encapsulates this into a quick script we can run on any system with Docker installed.
 
-I added in options to cache all the libraries locally so after you run the script the first time it
+I added in options to cache all the Gems locally under the standard `vendor/bundle` location
+so after you run the script the first time it
 will be quicker to restart the service. It can run the jekyll server in the foreground, background,
 or simply compile the pages into the `_site` directory and you can sync them to any site you would like.
 
