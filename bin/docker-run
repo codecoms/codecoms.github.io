@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 usage() {
-  echo "$( basename "${BASH_SOURCE}" ) <fg|bg|build>" 1>&2
+  echo "Usage: $( basename "${BASH_SOURCE}" ) <fg|bg|build>" 1>&2
   exit 1
 }
 
