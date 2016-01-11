@@ -11,11 +11,10 @@ Script available [here](https://github.com/codecoms/codecoms.github.io/tree/mast
 
 ---
 
-We are using [Jekyll](https://jekyllrb.com/), a static blog generator, for [Codecoms.com](http://codecoms.com),
-a site I maintain with a friend of mine as well as for my own [personal blog](http://digicat.org).
-
-Jekyll is a pretty intuitive system and is supported by GitHub for dynamic page generation. All
-you have to do is create a repository named `<username>.github.io` on GitHub and
+We are using [Jekyll](https://jekyllrb.com/) with the [Beautiful Jekyll](http://deanattali.com/beautiful-jekyll/) theme
+at [Codecoms.com](http://codecoms.com), a shared blog I maintain with a friend of mine.
+Jekyll is a simple, blog-aware, static site generator and is supported by [GitHub Pages](https://pages.github.com/).
+All you have to do is create a GitHub repository named `<username>.github.io`
 it will automatically [compile and publish your blog](https://help.github.com/articles/using-jekyll-with-pages/).
 
 While writing your articles, its convenient to have a local Jekyll environment running so you can edit and
@@ -25,9 +24,11 @@ especially if you are not familiar with the Ruby ecosystem.
 
 Fortunately there is an official [Jekyll Docker Image](https://github.com/jekyll/docker) which really helps out with this.
 
-Trying to simplify this even more I wrote a small utility script called
+I took this idea and wrote a small utility script called
 [bin/docker-run](https://github.com/codecoms/codecoms.github.io/tree/master/bin/docker-run)
-that we added into our repository which encapsulates this into a quick script we can run on any system with Docker installed.
+that we added into our repository which encapsulates a set of Docker commands and options into
+a one-line utility we can run on any system with Docker installed to get a local copy
+of our blog up for review.
 
 I added in options to cache all the Gems locally under the standard `vendor/bundle` location
 so after you run the script the first time it
@@ -73,4 +74,8 @@ running Jekyll in the background or `build` to not run any server but simply bui
 
 At this point just point to `http://localhost:4000` and check out your site!
 
+If you want to publish the port to external hosts (may be useful if you are using a virtual machine
+to run docker in) then simply add the `--public` or `-p` flag. For example:
+
+    $ bin/docker-run fg --public
 
