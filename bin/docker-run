@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 usage() {
-  echo "Usage: $( basename "${BASH_SOURCE}" ) <fg|bg|build>" 1>&2
+  echo "Usage: $( basename "${BASH_SOURCE}" ) <fg|bg> [--public|-p] | build" 1>&2
   exit 1
 }
 
@@ -25,33 +25,38 @@ kill_container() {
 }
 
 jekyll_foreground() {
+  local publish_ip=127.0.0.1
+  [[ $1 == '--public' || $1 == '-p' ]] && publish_ip=0.0.0.0
   kill_container "jekyll-serve"
   run_docker "jekyll-serve" \
-    "--publish=0.0.0.0:4000:4000 --interactive --tty" \
+    "--publish=${publish_ip}:4000:4000 --interactive --tty" \
     bundle exec jekyll server --watch
 }
 
 jekyll_background() {
+  local publish_ip=127.0.0.1
+  [[ $1 == '--public' || $1 == '-p' ]] && publish_ip=0.0.0.0
   kill_container "jekyll-serve"
   run_docker "jekyll-serve" \
-    "--publish=0.0.0.0:4000:4000 --detach" \
+    "--publish=${publish_ip}:4000:4000 --detach" \
     bundle exec jekyll server --watch
 }
 
 jekyll_build() {
+  [[ $# > 0 ]] && usage
   kill_container "jekyll-build"
   run_docker "jekyll-build" "" bundle exec jekyll build
 }
 
 MYBASE=$( dirname "${BASH_SOURCE}" )/..
 
-[[ $# != 1 ]] && usage
+[[ $# < 1 || $# > 2 ]] && usage
 
 CDPATH="" cd $MYBASE
 
 case $1 in
-  fg) jekyll_foreground ;;
-  bg) jekyll_background ;;
-  build) jekyll_build ;;
+  fg) jekyll_foreground $2;;
+  bg) jekyll_background $2;;
+  build) jekyll_build $2;;
   *) usage ;;
 esac
