@@ -44,7 +44,9 @@ an eye on is [Kubernetes](http://kubernetes.io) from Google.
 
 Kubernetes is an open-source container cluster management system inspired by Google's internal
 system called [Borg](http://research.google.com/pubs/pub43438.html). Its an opinionated system
-which maintains a core set of concepts such as Pods, Labels, Services, and Replication Controllers
+which maintains a core set of concepts such as [Pods](https://cloud.google.com/container-engine/docs/pods/),
+[Services](https://cloud.google.com/container-engine/docs/services/),
+and [Replication Controllers](https://cloud.google.com/container-engine/docs/replicationcontrollers/)
 which are coordinated together in a simplified flat networking space to provide
 resilient services composed from Docker containers.
 

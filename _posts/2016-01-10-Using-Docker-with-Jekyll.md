@@ -5,11 +5,9 @@ author: countdigi
 tags: [ docker, jekyll ]
 ---
 
----
+# Using Docker with Jekyll
 
 Script available [here](https://github.com/codecoms/codecoms.github.io/tree/master/bin/docker-run)
-
----
 
 We are using [Jekyll](https://jekyllrb.com/) with the [Beautiful Jekyll](http://deanattali.com/beautiful-jekyll/) theme
 at [Codecoms.com](http://codecoms.com), a shared blog I maintain with a friend of mine.

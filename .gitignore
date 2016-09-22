@@ -1,4 +1,9 @@
-_cache
+# project
 _site
-vendor
-.bundle
+.sass-cache
+.vagrant
+
+# general
+.DS_Store
+Thumbs.db
+ehthumbs.db
