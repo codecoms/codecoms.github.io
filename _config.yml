@@ -7,20 +7,20 @@ gems:
   - jekyll-paginate
 
 # If you are building a simple GitHub user page (username.github.io) then use these settings:
-url: "https://countdigi.github.io"
+url: "/"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
-#url: "https://username.github.io/projectname"
+#url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Kevin Counts
+title: codecoms.com
 
 # Short description of your site
-description: Kevin Counts
+description: The sound of one byte happening
 
 # --- Navigation bar options --- #
 
@@ -30,21 +30,18 @@ avatar: "/img/avatar-icon.png"
 
 # List of links in the navigation bar
 navbar-links:
-  CodeComs: "http://codecoms.com"
-  Github: "https://github.com/countdigi"
-  Twitter: "https://twitter.com/countdigi"
-  About: aboutme.html
+  About: about.html
+  Github: "https://github.com/codecoms"
+  Disclaimer: disclaimer.html
 
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Kevin Counts
-  email: "counts@digicat.org"
-  github: countdigi    # eg. daattali
-  twitter: countdigi   # eg. daattali
-  stackoverflow: yourlink  # eg. "3943160/daattali"
+  name: Codecoms
+  github: codecoms    # eg. daattali
+  twitter: codecoms   # eg. daattali
 
 # Select which links to show in the footer
 footer-links-active:
@@ -73,7 +70,7 @@ google_analytics: "UA-71883920-1"
 # Output options (more information on Jekyll's site)
 timezone: "America/Vancouver"
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments
 permalink: /:year-:month-:day-:title
 paginate: 5
 
