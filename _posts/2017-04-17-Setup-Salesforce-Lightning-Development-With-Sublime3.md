@@ -39,7 +39,7 @@ Here is how you do it.
 2. The latest OSX
 
 ## Setup
-1. Download the [Force CLI](https://www.force-cli.heroku.com) executable from Heroku
+1. Download the [Force CLI](https://force-cli.heroku.com) executable from Heroku
 2. Open a terminal window, go to the downloaded file and make it executable typing `chmod 777`
 3. Copy/move the executable in the folder `/usr/local/bin`
 4. Install the following plugin: **Fix Mac Path** and **Lightning**
