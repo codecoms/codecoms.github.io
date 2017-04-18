@@ -30,7 +30,7 @@ If you're using Saleforce1 you're using Lightning without knowing it.
 - Lighting is designed to follow an app-centric model
 - Lightning Components and Applications come in "Bundles" that store all of the necessary files to run Reusable, single-page applications
 
-If you're reading thnis article probaly you already know about Lightnign. So without further ado I'll get to the subject of this blog. How do you setup Sublime 3 to develo Lightning applicaitons? 
+If you're reading this article probaly you already know about Lightnign. So without further ado I'll get to the subject of this blog. How do you setup Sublime 3 to develop Lightning applicaitons? 
 
 Here is how you do it.
 
